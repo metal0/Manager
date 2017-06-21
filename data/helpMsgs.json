@@ -1,0 +1,25 @@
+{
+    "helpMsg1": [
+        "**Hey there!** I'm Manager, and I'm the main bot on the server! I power the server's bot adding process. Below are my commands, and right now, they are limited to staff. I'll have more added in the future, so sit tight!",
+        "**Prefix is m/**",
+        "```Staff Commands```",
+        "**ban** - Bans a user",
+        "**unban** - Unbans a user",
+        "**kick** - Kicks a user",
+        "**mute** - Mutes a user",
+        "**warn** - Warns a user",
+        "**bot** - Displays a bot for you to add to your server!",
+        "**verifybot** - Verifies a bot"
+      ],
+    "helpMsg2": [
+      "```Bot Owner Commands```",
+      "**eval** - Evaluates a string",
+      "**exec** - Executes a process command",
+      "**reload** - Reloads a command",
+      "**setgame** - Sets the bot's game"
+      ],
+    "helpMsg3": [
+      "```What Can I Do?```",
+      "Right now, the only command you, a regular user, has access to, is `m/suggest`. That will send a message to us, the staff, with your suggestion for a bot to add! The syntax to do so is `m/suggest [name] [reason why we should add the bot] [invite link]`"
+    ]
+}

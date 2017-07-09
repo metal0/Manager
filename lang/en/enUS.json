@@ -1,0 +1,35 @@
+{
+  "MSG_DM_BAN": "**You have been banned from {{guildName}}.**\n\n**Reason:** {{reason}}\n\nYou can appeal your ban by DMing me the command `appeal <message>`, where `'<message>'` is a message detailing why you think you deserve to have your ban lifted. You must send this command without a prefix or I won't recognize it.\n\nAfter you have sent your appeal it will be passed to the server moderators for review. You will be notified when your appeal has been approved or rejected. If your appeal is rejected, you may not appeal again.\n\nIf you are unable to DM me because we do not have any mutual servers, you may use this invite to gain a mutual server and then DM me your appeal.\nhttps://discord.gg/huBKpFN\n\nYou will want to remain in this mutual server until after your appeal has been approved so that you can be notified of the appeal result.",
+
+	"MSG_DM_AUTO_BAN": "**You have been automatically banned from {{guildName}}.**\n\n**Reason:** Automatic ban: Exceeded mention spam threshold\n\nIf you believe this to be in error, you can appeal your ban by DMing me the command `appeal <message>`, where `'<message>'` is the message detailing your appeal. You must send this command without a prefix or I won't recognize it.\n\nAfter you have sent your appeal it will be passed to the server moderators for review. You will be notified when your appeal has been approved or rejected. If your appeal is rejected, you may not appeal again.\n\nIf you are unable to DM me because we do not have any mutual servers, you may use this invite to gain a mutual server and then DM me your appeal.\nhttps://discord.gg/huBKpFN\n\nYou will want to remain in this mutual server until after your appeal has been approved so that you can be notified of the appeal result.",
+
+  "MSG_DM_SOFTBAN": "You have been softbanned.\n\n**Reason:** {{reason}}\n\nA softban is a kick that uses ban + unban to remove your messages from the server. You may rejoin momentarily.",
+
+  "MSG_DM_KICK": "You have been kicked from {{guildName}}.\n\n**Reason:** {{reason}}\n\nYou may rejoin when ever you want.",
+
+	"MSG_DM_APPROVED_APPEAL": "Your appeal has been approved. You have been unbanned. You may rejoin using this invite:\n{{invite}}",
+
+	"STR_DEFAULT_CASE_REASON": "Use `{{prefix}}reason {{caseNum}} <...reason>` to set a reason for this case",
+
+  "NO_MODLOG_CHAN": "I cannot find a mod-log channel, I am unable to {{action}}.",
+
+  "SUPPLY_REASON": "You must supply a reason for the {{action}}.",
+
+  "NO_PERMS": "I do not have the correct permission(s), `{{permission}}`",
+
+  "NO_TARGET": "You must mention someone to {{action}} them.",
+
+  "CANNOT_MOD": "This member is not {{action}}.",
+
+  "AWAIT_INPUT": "Awaiting moderator's input. Use {{prefix}}reason {{caseNum}} <reason>.",
+
+  "CANNOT_DM": "I cannot send the ban DM as ***{{target}}*** has **Direct Messages's** disabled, or has blocked me.",
+
+  "SUCCESS": "Successfully {{action}}: {{target}}.",
+
+  "CHECK_POPULATE": "Checking & Populating server configurations",
+
+  "ADD_DEFAULT": "Adding default configs for {{name}}.",
+
+  "LOAD_COLLECTION": "Loading {{name}} into the collection."
+}

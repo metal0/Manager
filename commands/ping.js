@@ -1,5 +1,5 @@
 exports.run = (client, message) => {
-  message.channel.send('Ping?').then(m => m.edit(`Roundtrip took: ${m.createdTimestamp - message.createdTimestamp}ms. Heartbeat: ${Math.round(client.ping)}ms.`))
+  message.channel.send('Ping?').then(m => m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`) );
 };
 
 exports.conf = {
@@ -12,5 +12,7 @@ exports.conf = {
 exports.help = {
   name: 'ping',
   description: 'Ping/Pong command. I wonder what this does? /sarcasm',
-  usage: 'ping'
+  usage: 'ping',
+  category:'Generic',
+  subCategory:''
 };

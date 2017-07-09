@@ -12,7 +12,7 @@ exports.run = (client, message, args) => {
       .then(m => {
         client.reload(command)
           .then(() => {
-            m.edit(`Successfully reloaded: ${command} in ${m.createdTimestamp - message.createdTimestamp}ms.`);
+            m.edit(`Successfully reloaded: ${command}`);
           })
           .catch(e => {
             m.edit(`Command reload failed: ${command}\n\`\`\`${e.stack}\`\`\``);
@@ -25,11 +25,13 @@ exports.conf = {
   enabled: true,
   guildOnly: false,
   aliases: ['r'],
-  permLevel: 4
+  permLevel: 10
 };
 
 exports.help = {
   name: 'reload',
   description: 'Reloads the command file, if it\'s been updated or modified.',
-  usage: 'reload <commandname>'
+  usage: 'reload <commandname>',
+  category:'System',
+  subCategory:'Owner'
 };

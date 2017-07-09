@@ -1,10 +1,17 @@
-const settings = require('../settings.json');
-module.exports = message => {
-  let client = message.client;
-  if (message.author.bot) return;
-  if (!message.content.startsWith(settings.prefix)) return;
-  let command = message.content.split(' ')[0].slice(settings.prefix.length);
-  let params = message.content.split(' ').slice(1);
+const util = require('../functions/util.js');
+module.exports = async (client, message) => {
+  if (message.channel.type === 'dm' && message.content.startsWith('appeal')) {
+    return console.log('Success');
+  } else
+  // util.antiInvite(message);
+  if (!message.guild
+    || !message.content.startsWith(client.serconf.get(message.guild.id).prefix)
+    || message.author.bot
+    || message.author.id === client.user.id
+    || !message.member
+  ) return;
+  const params = message.content.split(' ');
+  const command = params.shift().slice(client.serconf.get(message.guild.id).prefix.length);
   let perms = client.elevation(message);
   let cmd;
   if (client.commands.has(command)) {
@@ -16,4 +23,6 @@ module.exports = message => {
     if (perms < cmd.conf.permLevel) return;
     cmd.run(client, message, params, perms);
   }
+
 };
+// client.serconf.find('guildID', message.guild.id)

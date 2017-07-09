@@ -9,11 +9,13 @@ exports.conf = {
   enabled: true,
   guildOnly: false,
   aliases: [],
-  permLevel: 3
+  permLevel: 2
 };
 
 exports.help = {
   name: 'purge',
   description: 'Purges X amount of messages from a given channel.',
-  usage: 'purge <number>'
+  usage: 'purge <number>',
+  category:'Moderation',
+  subCategory:''
 };
